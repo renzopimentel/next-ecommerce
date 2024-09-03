@@ -8,7 +8,7 @@ const slides = [
     {
         id: 1,
         title: "Summer Sale Collections",
-        description: "Sale! Up to 50% off!",
+        description: "Sale! Hasta 50% de descuento!",
         img: "https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800",
         url: "/",
         bg: "bg-gradient-to-r from-yellow-50 to-pink-50",
@@ -37,8 +37,8 @@ const Slider = () => {
     return (
         <div className="h-[calc(100vh-80px)] overflow-hidden">
             <div
-            className="w-max h-full flex transition-all ease-in-out duration-1000"
-            style={{ transform: `translateX(-${current * 100}vw)` }}
+                className="w-max h-full flex transition-all ease-in-out duration-1000"
+                style={{ transform: `translateX(-${current * 100}vw)` }}
             >
             {slides.map((slide) => (
                 <div
@@ -63,10 +63,10 @@ const Slider = () => {
                     <div className="h-1/2 xl:w-1/2 xl:h-full relative">
                         <Image
                             src={slide.img}
-                            alt="slide"
-                            layout="fill"
-                            objectFit="cover"
+                            alt=""
+                            fill
                             sizes="100%"
+                            className="object-cover"
                         />
                     </div>
                 </div>
